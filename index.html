@@ -4,44 +4,58 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="keywords" content="HTML, CSS, JavaScript, Developpeur, Portfolio">
-    <meta name="description" content="TOut ce que vous devez savoir sur mes capacités à concevoir pour vous un site web">
+    <meta name="description" content="Tout ce que vous devez savoir sur mes capacités à concevoir pour vous un site web">
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Raleway:ital,wght@1,300&family=Shadows+Into+Light&display=swap" rel="stylesheet">
     <title>Portfolio - Karim Assababi</title>
   </head>
 
   <body>
-    <header>
-      <div>
-        <u>
-          <li><a href="CV.pdf">My CV</a></li>
-          <li><a href="#projets">My Projects</a></li>
-            <ul>
-              <li><a href="#projet1">Project 1</a></li>
-              <li><a href="#projet2">Project 2</a></li>
-              <li><a href="#projet3">Project 3</a></li>
+      <div class="fondecran">
+        <header>
+          <div>
+            <img src="images/icone.png" alt ="icone avec initiales" /> 
+          </div>
+          <nav>
+            <ul class="navbar">
+              <li class="navmenu"><a href="CV.pdf">My CV</a></li>
+              <li class="navmenu"><a href="#projets">My Projects</a>  <!--CLASS liste déroulante-->
+                <ul class="submenu">
+                  <li><a href="#">Project 1</a></li> 
+                  <li><a href="#">Project 2</a></li>
+                  <li><a href="#">Project 3</a></li>
+                </ul>
+              </li>
+              <li class="navmenu"><a href="#">My Blog</a></li>
             </ul>
-          <li><a href="blog">My Blog</a></li>
-        </u>
+          </nav>
+        </header>
+    
+        <section>
+          <div>
+            <h1>Karim ASSABABI</h1>
+            <p>Web Developer</p>
+          </div>
+          <div class="link">
+            <p><a href="#">Who I am</a></p>
+            <p><a href ="#">Contact me</a></p>
+          </div>
+        </section>
       </div>
-    </header>
-
-    <section>
-      <div>
-        <h1>Karim ASSABABI</h1>
-        <p>Web Developer</p>
-      </div>
-      <div>
-        <p>Who I am</p>
-        <p>Contact me</p>
-      </div>
-    </section>
+      
 
     <footer>
-      <div>
-        <p>GIT / GitHub</p>
-        <p>HTML & CSS</p>
-        <p>Javascript</p>
+      <div class="footer">
+        <h2>GIT / GitHub</h2>
+        <p>Cours DonkeySchool achevé. Niveau estimé: débutant.</p>
+        <h2>HTML & CSS</h2>
+        <p>Cours DonkeySchool non achevé. Niveau estimé: débutant ++.</p>
+        <h2>Javascript</h2>
+        <p>Cours DonkeySchool non commencé. Niveau estimé: nul.</p>
       </div>
     </footer>
   </body>
+</html>
   

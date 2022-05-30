@@ -1,14 +1,14 @@
 body {
     box-sizing:border-box;
+    margin: 0;
+    padding: 0;
     color: green;
     font-family:'Raleway', sans-serif;
 }
 
 .fondecran {
     background-image:url("images/lune_mobile.png");
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
-    min-height: 600px;
+    background-position: center;
 }
 
 img {
@@ -25,7 +25,7 @@ a {
     color: white;
     list-style-type: none;
 }
-
+ 
 li {
     list-style-type: none;
 }
@@ -50,22 +50,38 @@ h1 + p {
     font-weight: 400;
 }
 
-footer {
-    background-color: lightgrey;
-    min-height: 200px; 
+.section2 {
+    background: linear-gradient(to bottom, #787878, lightgrey, grey);
     font-size: 100%;
     font-weight: bold;
-}
-
-h2 {
-    margin: 2px 2px;
-    text-decoration: underline;
 }
 
 h2 + p {
     color: black;
 }
 
+.div-section2 h1 {
+    margin: 0;
+    border: inset green 3px;
+    border-radius: 12px;
+    padding: 0 4px;
+}
+
+.div-section2 h2 {
+    margin-bottom: 0;
+    width: 80%;
+    border-top: solid 2px white;
+}
+
+a[href*="donkey.school"] {
+    border: double 2px white;
+    padding: 3px 3px;
+}
+
+footer {
+    background-color: black;
+    color: white;
+}
 /* on attaque le display*/
 
 header {
@@ -78,17 +94,21 @@ nav {
 
 .navbar {
     display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
-    margin-right: 10px;
+    justify-content: flex-end;
+
 }
 
-section {
+.navmenu {
+    padding: 0 15px;
+    flex-shrink: 0;
+}
+
+.section1 {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 80px;
-}
+    margin-top: 40px;
+    }
 
 .link {
     display: flex;
@@ -96,24 +116,47 @@ section {
     width: 100%;
 }
 
-.footer {
+.div-section2 {
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
+    padding: 30px 15px;
 }
 
-
-
-
-
-
-
-
-
+footer {
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+}
 
 
 .submenu {
     display: none;
+    position: absolute;
 }
 
+.navmenu:hover > .submenu {
+    display: block;
+}
+
+.items-submenu {
+    line-height: 30px;
+    position: relative; 
+    right: 40px;   
+    top: 7px;
+    border-top: solid white 1px;
+}
+
+.items-submenu:hover {
+    opacity: 0.7;
+}
+
+
+@media screen and (min-width: 655px) {
+    .fondecran {
+        background-image: url("images/lune.png");
+        background-position: center;
+    }
+        
+    }

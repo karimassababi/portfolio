@@ -6,29 +6,30 @@
     <meta name="keywords" content="HTML, CSS, JavaScript, Developpeur, Portfolio">
     <meta name="description" content="Tout ce que vous devez savoir sur mes capacités à concevoir pour vous un site web">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaquerries.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Raleway:ital,wght@1,300&family=Shadows+Into+Light&display=swap" rel="stylesheet">
     <title>Portfolio - Karim Assababi</title>
   </head>
-
+  
   <body>
       <div class="fondecran">
         <header>
           <div>
-            <img src="images/icone.png" alt ="icone avec initiales" /> 
+            <img class="icone" src="images/icone.png" alt ="icone avec initiales" /> 
           </div>
           <nav>
             <ul class="navbar">
-              <li class="navmenu"><a href="CV.pdf">My CV</a></li>
-              <li class="navmenu"><a href="#projets">My Projects</a>  <!--CLASS liste déroulante-->
+              <li class="navmenu"><a href="CV.pdf" target="_blank">CV</a></li>
+              <li class="navmenu">Projects  <!--CLASS liste déroulante-->
                 <ul class="submenu">
-                  <li class="items-submenu"><a href="#">Project 1</a></li> 
-                  <li class="items-submenu"><a href="#">Project 2</a></li>
-                  <li class="items-submenu"><a href="#">Project 3</a></li>
+                  <li class="items-submenu"><a href="https://github.com/karimassababi/website-flow" target="_blank">Project 1</a></li> 
+                  <li class="items-submenu"><a href="https://github.com/karimassababi/my-super-website" target="_blank">Project 2</a></li>
+                  <li class="items-submenu"><a href="https://github.com/karimassababi/Challenge5" target="_blank">Project 3</a></li>
                 </ul>
               </li>
-              <li class="navmenu"><a href="#">My Blog</a></li>
+              <li class="navmenu"><a href="#article">Article</a></li>
             </ul>
           </nav>
         </header>
@@ -39,22 +40,65 @@
             <p>Web Developer</p>
           </div>
           <div class="link">
-            <p><a href="#">Who I am</a></p>
-            <p><a href ="#">Contact me</a></p>
+            <p><a href="https://www.jesuisundev.com/conseils-pour-developpeur-junior/" target="_blank">Who I am</a></p>
+            <p><a href ="#contact">Contact me</a></p>
           </div>
         </section>
       </div>
 
     <section class="section2">
-      <div class="div-section2">
         <h1>My Experience</h1>
+          <div class="experience">
+            <div>
+              <hr>
+              <h2>GIT / GitHub  <img src="images/github-icon.png" alt ="icône github"></h2>
+              <p>Lorem ipsum dolor sit amet. Qui voluptatibus adipisci ut magnam sint ad molestiae magni sed odio fugiat.</p>
+            </div>
+            <div>
+              <hr>
+              <h2>HTML & CSS  <img src="images/html-css-icon.png" alt="icône html css"></h2>
+              <p>Lorem ipsum dolor sit amet. Qui voluptatibus adipisci ut magnam sint ad molestiae magni sed odio fugiat.</p>
+            </div>
+            <div>
+              <hr>
+              <h2>Javascript  <img src="images/js-icon.png" alt="icône JS"></h2>
+              <p>Lorem ipsum dolor sit amet. Qui voluptatibus adipisci ut magnam sint ad molestiae magni sed odio fugiat.</p>
+            </div>
+          </div>
+      </section>
 
-        <h2>GIT / GitHub</h2>
-        <p>Cours DonkeySchool achevé. Niveau estimé: débutant.</p>
-        <h2>HTML & CSS</h2>
-        <p>Cours DonkeySchool non achevé. Niveau estimé: débutant ++.</p>
-        <h2>Javascript</h2>
-        <p>Cours DonkeySchool non commencé. Niveau estimé: nul.</p>
+      <section class="section4">
+        <div class="img-section4">
+          <img src="images/cat.png" alt="kitten">
+        </div>
+         <div class="text-section4">
+          <h3 id="article">Article de mon chat</h3>
+          <p>
+            Lorem ipsum dolor sit amet. Est eaque atque aut corrupti molestias id alias facilis ea quos vero!
+            Sit soluta nemo eos deleniti deleniti vel doloremque minus ea commodi tenetur hic fuga magnam. 
+            Qui impedit nostrum eos galisum molestiae quo nisi voluptatem est natus perferendis aut quaerat optio.
+            33 possimus odit qui esse perferendis eum eligendi nulla a architecto voluptatem ut ratione distinctio et blanditiis molestias.
+            Eos sint incidunt et facere quod est asperiores necessitatibus.
+            Et sint necessitatibus et illum fuga aut aliquid magni aut velit sunt!
+          </p>
+         </div>      
+      </section>
+
+    <section class="section3">
+      <div class="formular">
+        <h2>Ask me anything!</h2>
+        <form method="post" action="php"><span id="contact"></span>
+          <label for="nomprenom">Name</label>
+          <input type="text" name="php" id="nomprenom" autofocus/><br />
+          <label for="mail">E-mail</label>
+          <input type="email" name="php" id="mail" /><br />
+          <label for="question"></label>
+          <textarea name="php" id="question" rows="7" cols="40" placeholder ="Feel free to ask!"></textarea><br />
+          <input type="submit" value="Send!" />
+        </form>
+      </div>
+      <div class="letter">
+        <img src="images/icone_mail.png" alt="enveloppe">
       </div>
     </section>
 

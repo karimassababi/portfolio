@@ -7,11 +7,12 @@ body {
 }
 
 .fondecran {
-    background-image:url("images/lune_mobile.png");
+    background-image:url("images/domino.png");
     background-position: center;
+    background-size: cover;
 }
 
-img {
+.icone {
     max-width: 60%;
     max-height: 60%;
     margin-top: 3px;
@@ -19,15 +20,50 @@ img {
     border-radius: 6px;
 }
 
-a {
+.submenu {
+    display: none;
+    position: absolute;
+}
+
+.items-submenu {
+    line-height: 30px;
+    position: relative; 
+    right: 40px;   
+    top: 7px;
+    border-top: solid white 1px;
+}
+
+.items-submenu a {
+    font-size: 1em;
+}
+
+.navmenu:hover > .submenu {
+    display: block;
+}
+
+nav {
+    width: 150%;
+}
+
+a, .navmenu {
     font-weight: bolder;
     text-decoration: none;
     color: white;
-    list-style-type: none;
+    font-size: 1.1em;
+    cursor: pointer;
 }
- 
+
+.navmenu:nth-child(2) {
+    font-size: 1.2em;
+}
+
+nav a:hover, .navmenu:hover {
+    color: rgb(57,245,18);
+    transition: color 1s;
+}
+
 li {
-    list-style-type: none;
+    list-style-type: none;  
 }
 
 .link p {
@@ -35,61 +71,129 @@ li {
     border: white 2px solid;
     border-radius: 10px;
     color: white;
-    text-align: center;
+    font-size: 0.5em;
     padding: 5px;
 }
 
-h1, h1 + p {
+.link p:hover {
+    transform: scale(1.3);
+    background-color: rgb(57,245,18);
+    transition: transform 1s, color 1s;
+}
+
+.section1 {
     font-family: 'DM Serif Display', serif;
-    font-size: 200%;
-    font-weight: 1000;
+    font-size: 2.5em;
+    font-weight: 900;
+    text-align:center;
+    font-weight: 400;
+}
+
+.section1 h1 {
+    text-shadow: 2px -2px 2px black;
+    color: rgb(57,245,18);
 }
 
 h1 + p {
-    font-style:italic;
-    font-weight: 400;
+    color: white;
+    text-shadow: 5px -5px 3px green;
+    font-style: italic;
 }
 
 .section2 {
     background: linear-gradient(to bottom, #787878, lightgrey, grey);
-    font-size: 100%;
-    font-weight: bold;
+    ;
+}
+
+hr {
+    width: 80%;
 }
 
 h2 + p {
     color: black;
+    font-weight: bold;
 }
 
-.div-section2 h1 {
+.section2 h1 {
     margin: 0;
-    border: inset green 3px;
+    border: inset green 4px;
+    color: green;
     border-radius: 12px;
-    padding: 0 4px;
+    padding: 1px 4px;
+    font-family: 'DM Serif Display', serif;
+    font-size: 1.8em;
+    font-weight: bold;
+    display: inline;
 }
 
-.div-section2 h2 {
-    margin-bottom: 0;
-    width: 80%;
-    border-top: solid 2px white;
+.section2 h2 {
+    margin: 0;
 }
 
 a[href*="donkey.school"] {
-    border: double 2px white;
+    border: solid 2px white;
     padding: 3px 3px;
+}
+
+.section3 {
+    margin: 10px;
+    padding: 10px;
+    border: 8px solid green;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.section3 h2 {
+    margin-top: 0;
+    color: black;
+}
+
+input[type="submit"] {
+    background-color: green;
+    color: white;
+    border-radius: 5px;
+    border: none;
+    padding: 2px;
+    font-size: 1em;
+}
+
+.letter {           /*faire disparaitre l'enveloppe*/
+    display: none;
+}
+
+.letter img {
+    max-width: 60%;
+    max-height: 60%
 }
 
 footer {
     background-color: black;
     color: white;
 }
-/* on attaque le display*/
+
+.items-submenu:hover {
+    opacity: 0.7;
+}
+
+.section4 {
+    margin-top: 10px;
+}
+
+.img-section4 img {
+    max-width: 100%;
+    height: 100%;
+}
+
+.text-section4 {
+    padding-left: 15px;
+    padding-right: 15px;
+    text-align: justify;
+}
+
+                                /* DISPLAY*/
 
 header {
     display: flex;
-}
-
-nav {
-    width: 150%;
 }
 
 .navbar {
@@ -116,12 +220,21 @@ nav {
     width: 100%;
 }
 
-.div-section2 {
+.section2 {
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
     padding: 30px 15px;
+}
+
+.formular textarea {
+    margin-top: 5px;
+}
+
+.formular {
+    text-align: left;
+    line-height: 1.8;
 }
 
 footer {
@@ -131,32 +244,7 @@ footer {
 }
 
 
-.submenu {
-    display: none;
-    position: absolute;
-}
-
-.navmenu:hover > .submenu {
-    display: block;
-}
-
-.items-submenu {
-    line-height: 30px;
-    position: relative; 
-    right: 40px;   
-    top: 7px;
-    border-top: solid white 1px;
-}
-
-.items-submenu:hover {
-    opacity: 0.7;
-}
 
 
-@media screen and (min-width: 655px) {
-    .fondecran {
-        background-image: url("images/lune.png");
-        background-position: center;
-    }
-        
-    }
+                                    
+

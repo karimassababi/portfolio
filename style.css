@@ -155,6 +155,8 @@ input[type="submit"] {
     border: none;
     padding: 2px;
     font-size: 1em;
+    position: relative;
+    left: 265px;
 }
 
 .letter {           /*faire disparaitre l'enveloppe*/
@@ -229,7 +231,7 @@ header {
 }
 
 .formular textarea {
-    margin-top: 5px;
+    margin-top: 10px;
 }
 
 .formular {
